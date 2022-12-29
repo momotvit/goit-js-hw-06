@@ -9,6 +9,7 @@ const ingredients = [
 
 
 
+
 const ingredientListEl = document.getElementById('ingredients');
 console.log(ingredientListEl);
 
@@ -16,13 +17,14 @@ const createIngredientsHtmlList = ingredients.map(ingredientItemEl => {
   const createIngredientLi = document.createElement("li");
   createIngredientLi.textContent = ingredientItemEl;
   createIngredientLi.classList.add("item");
+ 
   return createIngredientLi;
 });
+  addingIngridientsToHtml();
+  
 
-
-ingredientListEl.append(...createIngredientsHtmlList);
-
-
+ 
+function addingIngridientsToHtml() { ingredientListEl.append(...createIngredientsHtmlList) };
 
 
 
