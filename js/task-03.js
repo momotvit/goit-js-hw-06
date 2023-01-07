@@ -12,3 +12,59 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+   
+
+ 
+
+
+// function includes(array, value) {
+//   // Change code below this line
+//  for (let arr of array){
+//   if (arr === value) {
+   
+//     return true;
+//   } 
+// }
+//   return false;
+//   // Change code above this line
+// }
+
+// includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus")
+
+
+// function includes(array, value) {
+//   // Change code below this line
+// for (let index = 0; index < array.length; index++) {
+//   if(array[index] === value){
+//      return true;
+//   }
+//   return false;
+// }
+  
+//   // Change code above this line
+// }
+
+// includes(["Earth", "Mars", "Venus", "Uranus", "Jupiter", "Saturn"], "Uranus")\
+
+ 
+
+// function calculateTotal(number) {
+//  // Change code below this line
+// let sum = 0;
+
+// for (let i = 0; i <= number; i += 1) {
+//   sum += i;
+// }
+
+// console.log(sum);
+//   // Change code above this line
+// }
+
+// calculateTotal(7);//8
+// calculateTotal(18);// 171
+
+const planets = ["Earth", "Mars", "Venus"];
+
+for (let i = 0; i < planets.length; i += 1) {
+  console.log(planets[i]);
+}
