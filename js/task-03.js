@@ -14,5 +14,56 @@ const images = [
 ];
    
 
+// const emailInputName = "email";
+// const passwordInputName = "password";
+
+// const credentials = {
+//   // Change code below this line
+// [emailInputName] :"henry.carter@aptmail.com",
+//   [passwordInputName] : "jqueryismyjam",
+
+//   // Change code above this line
+// };
+
+// console.log(credentials.email);
+// console.log(credentials.password);
 
 
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const keys = [];
+// const values = [];
+// // Change code below this line
+// for(const key in apartment){
+//   keys.push(key);
+//   values.push(apartment[key]);
+// }
+
+// console.log(keys);
+// console.log(values);
+
+
+
+
+
+
+
+const highTemperatures = {
+  yesterday: 28,
+  today: 26,
+  tomorrow: 33,
+};
+// Change code below this line
+
+// const yesterday = highTemperatures.yesterday;
+// const today = highTemperatures.today;
+// const tomorrow = highTemperatures.tomorrow;
+const {yesterday,today,tomorrow,icon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"} = highTemperatures;
+// Change code above this line
+const meanTemperature = (yesterday + today + tomorrow) / 3;
+
+console.log(meanTemperature);
+console.log(icon);
