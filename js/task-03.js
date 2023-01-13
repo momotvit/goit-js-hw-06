@@ -45,25 +45,76 @@ const images = [
 // console.log(keys);
 // console.log(values);
 
-
-
-
-
-
-
-const highTemperatures = {
-  yesterday: 28,
-  today: 26,
-  tomorrow: 33,
-};
 // Change code below this line
 
-// const yesterday = highTemperatures.yesterday;
-// const today = highTemperatures.today;
-// const tomorrow = highTemperatures.tomorrow;
-const {yesterday,today,tomorrow,icon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"} = highTemperatures;
-// Change code above this line
-const meanTemperature = (yesterday + today + tomorrow) / 3;
 
-console.log(meanTemperature);
-console.log(icon);
+
+
+
+// function processCall(recipient) {
+//   // Имитируем доступность абонента случайным числом
+//   const isRecipientAvailable = Math.random() > 0.5;
+//   console.log(isRecipientAvailable);
+
+//   if (!isRecipientAvailable) {
+//     console.log(`Абонент ${recipient} недоступен, оставьте сообщение.`);
+//     // Логика активации автоответчика
+//   } else {
+//     console.log(`Соединяем с ${recipient}, ожидайте...`);
+//     // Логика принятия звонка
+//   }
+// }
+
+// processCall("Манго");
+
+
+// function processCall(recipient, onAvailable, onNotAvailable) {
+//   // Имитируем доступность абонента случайным числом
+//   const isRecipientAvailable = Math.random() > 0.5;
+
+//   if (!isRecipientAvailable) {
+//     onNotAvailable(recipient);
+//     return;
+//   }
+
+//   onAvailable(recipient);
+// }
+
+// function takeCall(name) {
+//   console.log(`Соединяем с ${name}, ожидайте...`);
+//   // Логика принятия звонка
+// }
+
+// function activateAnsweringMachine(name) {
+//   console.log(`Абонент ${name} недоступен, оставьте сообщение.`);
+//   // Логика активации автоответчика
+// }
+
+// function leaveHoloMessage(name) {
+//   console.log(`Абонент ${name} недоступен, записываем голограмму.`);
+//   // Логика записи голограммы
+// }
+
+// processCall("Манго", takeCall, activateAnsweringMachine);
+// processCall("Поли", takeCall, leaveHoloMessage);
+
+
+// const numbers = [5, 10, 15, 20, 25];
+
+// // Классический for
+// // for (let i = 0; i < numbers.length; i += 1) {
+// //   console.log(`Индекс ${i}, значение ${numbers[i]}`);
+// // }
+
+// // Перебирающий forEach
+// numbers.forEach(function (number, index) {
+//   console.log(`Индекс ${index}, значение ${number}`);
+// });
+
+const numbers = [5, 10, 15, 20, 25];
+
+const logMessage = (number, index) => {
+  console.log(`Индекс ${index}, значение ${number}`);
+};
+
+numbers.forEach(logMessage);
