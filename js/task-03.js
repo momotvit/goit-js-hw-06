@@ -11,6 +11,19 @@ const images = [
     url: 'https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     alt: 'Group of Horses Running',
   },
+
 ];
    
+
+
+
+const galleryEl = document.querySelector('.gallery');
+
+function addGalleryMarkup(object, el) {
+  const imgEl = object.map((item) => `<li class = "gallery__img--wrap"><img class = "gallery__img" src="${item.url}" alt="${item.alt}" width = 300px ></li> `).join("");
+  el.insertAdjacentHTML("beforeend", imgEl);
+  
+}
+
+addGalleryMarkup(images,galleryEl);
 

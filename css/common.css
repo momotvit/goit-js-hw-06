@@ -48,3 +48,19 @@ button {
 #descendant {
   background-color: #ff9800;
 }
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.gallery__img--wrap {
+  margin-bottom: 20px;
+  flex-direction: row;
+  list-style: none;
+}
+
+.gallery__img {
+  display: block;
+}
