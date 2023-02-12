@@ -21,9 +21,11 @@ const galleryEl = document.querySelector('.gallery');
 
 function addGalleryMarkup(object, el) {
   const imgEl = object.map((item) => `<li class = "gallery__img--wrap"><img class = "gallery__img" src="${item.url}" alt="${item.alt}" width = 300px ></li> `).join("");
-  el.insertAdjacentHTML("beforeend", imgEl);
+  console.log(imgEl);
+  el.insertAdjacentHTML("beforeend",imgEl);
   
 }
+
 
 addGalleryMarkup(images,galleryEl);
 
