@@ -4,7 +4,7 @@ const dataLength = Number(inputEl.dataset.length);
 
 
 function borderColorChangeOnBlur() {
-    if (inputEl.value.length === dataLength) {
+    if (inputEl.value.trim().length === dataLength) {
         inputEl.classList.add("valid");
         inputEl.classList.remove("invalid");
     
