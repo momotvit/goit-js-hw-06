@@ -21,18 +21,20 @@ const ingredients = [
 
 const ingredientListEl = document.getElementById('ingredients');
 
-function addIngredients(array) {
+function addIngredients(array,ulElement) {
+  const newArrOfIngredients = [];
+
   ingredients.forEach(ingredient => {
     const ingridientEl = document.createElement('li');
     ingridientEl.textContent = ingredient;
     ingridientEl.classList.add('item');
-    ingredientListEl.append(ingridientEl);
+    newArrOfIngredients.push(ingridientEl);
   })
-
+ 
+  return ulElement.append(...newArrOfIngredients);
 }
 
-addIngredients(ingredients);
-
+addIngredients(ingredients,ingredientListEl);
 
 
 
